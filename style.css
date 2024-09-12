@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: greenyellow;
+}
+
+nav{
+    background-color: blueviolet;
+    color: white;
+    height: 60px;
+    width: 100%;
+    border-bottom: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 14px;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav ul{
+list-style-type: none;
+font-size: larger;
+    font: bold;
+}
+
+.gamecontainer{
+background-color: orangered;
+display: flex;
+justify-content: center;
+margin-top: 50px;
+border: 2px solid black;
+color: white;
+
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+}
+
+.box{
+    border: 2px solid white;
+    font-size: 7vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    background-color: blueviolet;
+}
+
+.imgbox img{
+    width: 0;
+    transition: width 0.5s ease-in-out;
+}
+
+.bt-0{
+    border-top: 0;
+}
+
+.br-0{
+    border-right: 0;
+}
+
+.bb-0{
+    border-bottom: 0;
+}
+
+.bl-0{
+    border-left: 0;
+}
+
+.gameinfo{
+    padding: 8px 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#restart{
+    background-color: palegreen;
+    color: white;
+    font-size: larger;
+    padding: 3px;
+    border-radius: 8px;
+}
